@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Contacto</title>
+  </head>
+  <body>
+    <h1><strong>Contacto</strong></h1>
+    <form action="contacto.html" method="get">
+      <div>
+        <label for="fullname"><strong>Nombre:</strong></label>
+        <input
+          id="fullname"
+          type="text"
+          placeholder="Tu nombre"
+          name="fullname"
+        />
+      </div>
+      <div>
+        <label for="email"><strong>Email:</strong></label>
+        <input id="email" type="email" name="email" placeholder="Tu email" />
+      </div>
+      <div>
+        <label for="phone"><strong>Teléfono:</strong></label>
+        <input id="phone" name="phone" type="number" />
+      </div>
+      <div>
+        <label for="birthdate"><strong>Fecha de Nacimiento:</strong></label>
+        <input id="birthdate" name="birthdate" type="date" />
+      </div>
+      <div>
+        <label for="permiso">Permito que se usen mis datos personales.</label>
+        <input id="permiso" name="permiso" type="checkbox" />
+      </div>
+      <fieldset>
+        <legend>Como nos comunicamos contigo?</legend>
+        <input id="Opcion1" type="Radio" name="Teléfono" />
+        <label for="opcion1">Telefono</label>
+        <input id="Opcion2" type="Radio" name="Email" />
+        <label for="opcion2">Email</label>
+      </fieldset>
+      <div>
+        <label for="message">Mensaje:</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      </div>
+      <button type="submit">Enviar</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
